@@ -21,3 +21,81 @@ $gray-900: #404040;
 $white: #ffffff;
 $black: #000000;
 $font-size: 12px;
+
+@mixin title-OPEN20-600 {
+	font-family: "Open Sans", arial, verdana, sans-serif !important;
+	font-size: 20px !important;
+	font-weight: 600 !important;
+	color: $black !important;
+	text-transform: uppercase !important;
+}
+@mixin menu-helvetica15-600 {
+	font-family: "Helvetica Neue", helvetica, arial, verdana, sans-serif !important;
+	font-size: 15px !important;
+	font-weight: 600 !important;
+	color: $gray-900 !important;
+}
+@mixin submenu-active-helvetica13-600 {
+	font-family: "Helvetica Neue", helvetica, arial, verdana, sans-serif !important;
+	font-size: 13px !important;
+	font-weight: 600 !important;
+	color: $gray-900 !important;
+}
+@mixin submenu-helvetica13-300 {
+	font-family: "Helvetica Neue", helvetica, arial, verdana, sans-serif !important;
+	font-size: 13px !important;
+	font-weight: 300 !important;
+	color: $gray-900 !important;
+}
+
+@mixin chapter-opensans16-300 {
+	font-family: "Open Sans", arial, verdana, sans-serif !important;
+	font-size: 16px !important;
+	font-weight: 300 !important;
+	color: $black !important;
+}
+@mixin main-opensans15-300 {
+	font-family: "Open Sans", arial, verdana, sans-serif !important;
+	font-size: 15px !important;
+	font-weight: 300 !important;
+	color: $black !important;
+}
+@mixin title-ROBOTO-300 {
+	font-family: "Roboto", arial, verdana, sans-serif !important;
+	font-size: 13px !important;
+	font-weight: 300 !important;
+	text-transform: uppercase !important;
+	color: $white !important;
+	background-color: $blue-500 !important;
+}
+@mixin nav-700 {
+	font-family: "Roboto", arial, verdana, sans-serif !important;
+	font-size: 13px !important;
+	font-weight: 700 !important;
+	color: $gray-800 !important;
+}
+
+@mixin table-title-opensans14-300 {
+	font-family: "Open Sans", arial, verdana, sans-serif !important;
+	font-size: 14px !important;
+	font-weight: 300 !important;
+	color: $black !important;
+}
+@mixin table-cell-opensans12-300 {
+	font-family: "Open Sans", arial, verdana, sans-serif !important;
+	font-size: 12px !important;
+	font-weight: 300 !important;
+	color: $black !important;
+}
+
+.none {
+	display: none;
+}
+.block {
+	display: block;
+}
+
+@mixin table-tab-header {
+	@include submenu-active-helvetica13-600;
+	background-color: $gray-300;
+}

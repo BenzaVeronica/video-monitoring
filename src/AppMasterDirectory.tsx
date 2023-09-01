@@ -5,7 +5,7 @@ import Toolbar from "./components/Toolbar/Toolbar";
 
 export default function AppMasterDirectory() {
 	return (
-		<div>
+		<div className="video-monitoring">
 			<Toolbar />
 			<VideoRow />
 		</div>

@@ -8,7 +8,7 @@ export interface VideoItem {
 		{
 			src: string;
 			type: VideoType;
-		}
+		},
 	];
 	name: string;
 }
@@ -17,3 +17,9 @@ export interface VideoItem {
 // 	options: VideoJsPlayerOptions;
 // 	onReady: () => void;
 // }
+
+export interface IInitialObj {
+	Id: number;
+	Name: string;
+}
+export type InitialObjOrNull = IInitialObj | null;

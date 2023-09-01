@@ -1,4 +1,12 @@
 .Toolbar {
 	height: 100px;
 	display: flex;
+	align-items: center;
+	padding: 20px 0;
+}
+.ToolbarItem:not(:last-child) {
+	margin-right: 30px;
+}
+.Toolbar .Toolbar_btn span.btn-text {
+	text-transform: capitalize !important;
 }

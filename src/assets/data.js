@@ -16,7 +16,7 @@ export const wells = [
 // export const videoNames = [];
 export const VIDEOS = [
 	{
-		poster: "http://media.w3.org/2010/05/video/poster.png",
+		poster: "https://media.w3.org/2010/05/video/poster.png",
 		imgAlt: "Image 0 not found",
 		sources: [
 			{
@@ -27,10 +27,10 @@ export const VIDEOS = [
 		name: "Скважина1Время_1010_1020Скважина1Время_1010_1020Скважина1Время_1010_1020",
 	},
 	{
-		poster: "http://media.w3.org/2010/05/bunny/poster.png",
+		poster: "https://media.w3.org/2010/05/bunny/poster.png",
 		sources: [
 			{
-				src: "http://media.w3.org/2010/05/bunny/trailer.mp4",
+				src: "https://media.w3.org/2010/05/bunny/trailer.mp4",
 				type: "video/mp4",
 			},
 		],
@@ -38,10 +38,10 @@ export const VIDEOS = [
 		name: "Скважина1Время_1020_1030",
 	},
 	{
-		poster: "http://media.w3.org/2010/05/sintel/poster.png",
+		poster: "https://media.w3.org/2010/05/sintel/poster.png",
 		sources: [
 			{
-				src: "http://media.w3.org/2010/05/sintel/trailer.mp4",
+				src: "https://media.w3.org/2010/05/sintel/trailer.mp4",
 				type: "video/mp4",
 			},
 		],
@@ -49,7 +49,7 @@ export const VIDEOS = [
 		name: "Скважина1Время_1030_1040",
 	},
 	{
-		poster: "http://media.w3.org/2010/05/sintel/poster.png",
+		poster: "https://media.w3.org/2010/05/sintel/poster.png",
 		sources: [
 			{
 				src: file,
@@ -60,7 +60,7 @@ export const VIDEOS = [
 		name: "Скваж1030_1040",
 	},
 	// {
-	// 	poster: "http://media.w3.org/2010/05/video/poster.png",
+	// 	poster: "https://media.w3.org/2010/05/video/poster.png",
 	// 	sources: [
 	// 		{
 	// 			src: "https://youtu.be/9tRHtctkpM0",
