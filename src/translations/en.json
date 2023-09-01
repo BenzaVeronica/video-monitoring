@@ -1,0 +1,21 @@
+{
+	"stage": " Stage: {{val}},",
+	"dates": " {{val1, datetime}} - {{val2, datetime}},",
+	"duration": "Duration: {{val, number}} days,",
+	"shift": "Shift: {{val, number}} days",
+	"advance": "Advance: +{{val, number}} days",
+	"delay": "Delay: {{val, number}} days",
+	"settings": {
+		"title": "Schedule settings",
+		"day": "day",
+		"days": "days",
+		"min": "min",
+		"range": "from {{val1, number}} to {{val2, number}}",
+		"firstDay": "First day of the month",
+		"dayInterval": "Column spacing",
+		"dayWidth": "Number of px per day",
+		"transparencyComponent": "Component transparency",
+		"rowHeight": "Height of the graph line",
+		"heightComponent": "Component height"
+	}
+}

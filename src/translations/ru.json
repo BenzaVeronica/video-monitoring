@@ -1,0 +1,21 @@
+{
+	"stage": " Этап: {{val}},",
+	"dates": " {{val1, datetime}} - {{val2, datetime}},",
+	"duration": "Продолжительность: {{val, number}} дн,",
+	"shift": "Сдвиг: {{val, number}} дн.",
+	"advance": "Опережение: +{{val, number}} дн.",
+	"delay": "Отставание: {{val, number}} дн.",
+	"settings": {
+		"title": "Настройки графика",
+		"day": "число",
+		"days": "дня",
+		"min": "мин",
+		"range": "от {{val1, number}} до {{val2, number}}",
+		"firstDay": "Первый день месяца",
+		"dayInterval": "Интервалы в колонках",
+		"dayWidth": "Кол-во px на день",
+		"transparencyComponent": "Прозрачность компонентов",
+		"rowHeight": "Высота строки графика",
+		"heightComponent": "Высота компонента"
+	}
+}

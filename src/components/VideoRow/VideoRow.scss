@@ -1,0 +1,69 @@
+@import "../../styles/constants.scss";
+
+.VideosBox {
+	height: 420px;
+}
+
+.VideosBox {
+	display: flex;
+	gap: 15px;
+}
+.VideoRow {
+	width: 500px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+.VideoEl {
+	display: flex;
+	align-items: center;
+	background-color: #f5f5f5;
+	height: 130px;
+	width: 500px;
+	position: relative;
+	cursor: pointer;
+}
+.VideoEl.isCurrent:hover,
+.VideoEl:hover {
+	background-color: $gray-300;
+	.VideoEl_Imgbox img {
+		opacity: 0.5;
+	}
+}
+.VideoEl.isCurrent {
+	background-color: $blue-200;
+}
+.VideoEl + .VideoEl {
+	margin-top: 15px;
+}
+.VideoEl_Imgbox {
+	height: 130px;
+	width: 175px;
+}
+.VideoEl_Imgbox img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.VideoEl_Textbox {
+	display: block;
+	word-wrap: break-word;
+	padding-left: 15px;
+	width: calc(100% - 175px - 15px);
+}
+.VideoEl_Text_Title {
+	width: 225px;
+}
+.VideoEl_Text_Span {
+	position: absolute;
+	top: 10%;
+	right: 5%;
+	width: 50px;
+	padding: 3px;
+	text-align: center;
+	background-color: blue;
+	color: $white;
+}
+.VideoEl_Text_Span.isLive {
+	background-color: red;
+	color: $white;
+}
