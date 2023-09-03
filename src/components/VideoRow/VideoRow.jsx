@@ -4,10 +4,11 @@ import videojs from "video.js";
 
 import "./VideoRow.scss";
 import VideoJS from "../../lib/VideoJS/VideoJS";
-import { VIDEOS } from "../../assets/data";
+// import { VIDEOS } from "../../assets/data";
+import { VideosStore } from "../../store/VideosStore";
 
-export default function VideoRow() {
-	const [currentVideo, setCurrentVideo] = React.useState(0);
+export default function VideoRow({ videos, curVideo }) {
+	const [currentVideo, setCurrentVideo] = React.useState(curVideo ? curVideo : null);
 	const playerRef = React.useRef(null);
 
 	const videoJsOptions = {
@@ -36,9 +37,14 @@ export default function VideoRow() {
 
 	return (
 		<div className="VideosBox">
-			<VideoJS playlist={VIDEOS} options={videoJsOptions} onReady={handlePlayerReady} />
-			<div className="VideoRow">
-				{VIDEOS.map((el, index) => {
+			{currentVideo != null && (
+				<VideoJS playlist={videos} options={videoJsOptions} onReady={handlePlayerReady} />
+			)}
+			<div
+				className={cn("VideoRow", {
+					long: currentVideo === null,
+				})}>
+				{videos.map((el, index) => {
 					const isLive = el.sources[0].type === "application/x-mpegURL";
 					return (
 						<div

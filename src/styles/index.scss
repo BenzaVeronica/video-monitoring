@@ -8,6 +8,11 @@
 .video-monitoring {
 	padding: 0 20px;
 }
+.builsobjects {
+	&*:not(svg) {
+		@include main-opensans15-300;
+	}
+}
 .x-container {
 	padding: 0 !important;
 }

@@ -10,3 +10,16 @@
 .Toolbar .Toolbar_btn span.btn-text {
 	text-transform: capitalize !important;
 }
+.ToolbarItem {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+}
+.ToolbarWell {
+	width: 300px;
+}
+.ToolbarBtn {
+	align-self: flex-end;
+	margin-bottom: 5px;
+}

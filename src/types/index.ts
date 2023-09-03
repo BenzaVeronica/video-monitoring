@@ -1,5 +1,7 @@
 //  import videojs, {VideoJsPlayerOptions} from "video.js";
 import Player from "video.js/dist/types/player";
+
+export type IStatus = "loading" | "error" | "success" | "edited";
 export type VideoType = "application/x-mpegURL" | "video/mp4";
 export interface VideoItem {
 	poster: string;
@@ -8,7 +10,7 @@ export interface VideoItem {
 		{
 			src: string;
 			type: VideoType;
-		},
+		}
 	];
 	name: string;
 }
