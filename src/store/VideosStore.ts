@@ -1,5 +1,6 @@
 import { action, makeAutoObservable, observable, runInAction, toJS } from "mobx";
 import api from "../api";
+import { VIDEOS } from "../assets/data";
 import { IStatus } from "../types";
 
 export class VideosStoreImpl {
@@ -23,7 +24,8 @@ export class VideosStoreImpl {
 	getVideosByWellIdAction = async (wellId) => {
 		try {
 			this._status = "loading";
-			const { data } = await api.getVideos(wellId);
+			// const { data } = await api.getVideos(wellId);
+			const data = VIDEOS;
 			runInAction(() => {
 				this._data = data.filter((el) => el.Id === wellId);
 			});
