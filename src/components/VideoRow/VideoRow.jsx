@@ -27,11 +27,11 @@ export default function VideoRow({ videos, curVideo }) {
 	const handlePlayerReady = (player) => {
 		playerRef.current = player;
 		player.on("waiting", () => {
-			videojs.log("player is waiting");
+			// videojs.log("player is waiting");
 		});
 
 		player.on("dispose", () => {
-			videojs.log("player will dispose");
+			// videojs.log("player will dispose");
 		});
 	};
 

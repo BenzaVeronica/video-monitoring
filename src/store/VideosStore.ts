@@ -22,21 +22,21 @@ export class VideosStoreImpl {
 	}
 
 	getVideosByWellIdAction = async (wellId) => {
-		try {
-			this._status = "loading";
-			// const { data } = await api.getVideos(wellId);
-			const data = VIDEOS;
-			runInAction(() => {
-				this._data = data.filter((el) => el.Id === wellId);
-			});
-
-			console.log(this._data);
-			this._status = "success";
-			// return result;
-		} catch (error) {
-			this._status = "error";
-			console.error(error);
-		}
+		// try {
+		// 	this._status = "loading";
+		// 	// const { data } = await api.getVideos(wellId);
+		// 	const data = VIDEOS;
+		// 	// runInAction(() => {
+		// 	// 	this._data = data.filter((el) => el.Id === wellId);
+		// 	// });
+		// 	this._data = VIDEOS;
+		// 	console.log(this._data);
+		// 	this._status = "success";
+		// 	// return result;
+		// } catch (error) {
+		// 	this._status = "error";
+		// 	console.error(error);
+		// }
 	};
 }
 export const VideosStore = new VideosStoreImpl();
