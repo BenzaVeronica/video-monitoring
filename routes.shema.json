@@ -1,0 +1,110 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "title": "mdm.tpl.routes",
+    "description": "mdm routes",
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+        "routes",
+        "key"
+    ],
+    "properties": {
+        "routes": {
+            "type": "array",
+            "items": {
+                "$ref": "#/definitions/route"
+            }
+        },
+        "key": {
+            "type": "string"
+        },
+        "parameters": {
+            "type": "string"
+        }
+    },
+    "definitions": {
+        "route": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+                "id",
+                "caption"
+            ],
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "description": ""
+                },
+                "caption": {
+                    "type": "string",
+                    "description": ""
+                },
+                "showSiblings": {
+                    "type": "boolean",
+                    "description": ""
+                },
+                "view": {
+                    "type": "string",
+                    "description": ""
+                },
+                "hidden": {
+                    "type": "boolean"
+                },
+                "links": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "tags": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "helpUri": {
+                    "type": "string"
+                },
+                "category": {
+                    "type": "string"
+                },
+                "items": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/route"
+                    }
+                },
+                "features": {
+                    "type": "object",
+                    "additionalProperties": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/definitions/featureCondition"
+                        }
+                    }
+                },
+                "canView": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "featureCondition": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "type": {
+                    "type": "string"
+                },
+                "roles": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    }
+}

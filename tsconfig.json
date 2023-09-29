@@ -1,21 +1,19 @@
 {
 	"compilerOptions": {
-		"target": "esnext",
+		"target": "es2016",
 		"module": "commonjs",
-		"lib": ["dom", "dom.iterable", "esnext"],
+		"sourceMap": true,
+		"alwaysStrict": true,
+		"noImplicitAny": false,
+		"noUnusedLocals": false,
+		"noImplicitThis": true,
+		"noImplicitReturns": true,
+		"preserveConstEnums": true,
+		"experimentalDecorators": true,
+		"emitDecoratorMetadata": true,
 		"allowJs": true,
-		"skipLibCheck": true,
-		"esModuleInterop": true,
-		"allowSyntheticDefaultImports": true,
-		"strict": true,
-		"forceConsistentCasingInFileNames": true,
-		"noFallthroughCasesInSwitch": true,
-		"moduleResolution": "node",
-		"resolveJsonModule": true,
-		"isolatedModules": true,
-		"noEmit": true,
-		"jsx": "react-jsx",
-		"noImplicitAny": false
+		"jsx": "react",
+		"lib": ["es6", "dom"]
 	},
-	"include": ["src", "src/callRender.tsx"]
+	"include": ["./Scripts/globalexports.ts"]
 }

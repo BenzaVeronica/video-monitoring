@@ -1,0 +1,25 @@
+.Toolbar {
+	height: 100px;
+	display: flex;
+	align-items: center;
+	padding: 20px 0;
+}
+.ToolbarItem:not(:last-child) {
+	margin-right: 30px;
+}
+.Toolbar .Toolbar_btn span.btn-text {
+	text-transform: capitalize !important;
+}
+.ToolbarItem {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+}
+.ToolbarWell {
+	width: 300px;
+}
+.ToolbarBtn {
+	align-self: flex-end;
+	margin-bottom: 5px;
+}

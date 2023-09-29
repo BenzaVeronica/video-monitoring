@@ -1,0 +1,26 @@
+@import "./constants.scss";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.video-monitoring {
+	padding: 0 20px;
+}
+.builsobjects {
+	&*:not(svg) {
+		@include main-opensans15-300;
+	}
+}
+.x-container {
+	padding: 0 !important;
+}
+ul,
+li {
+	list-style-type: none;
+}
+button {
+	outline: none;
+	border: 0;
+}

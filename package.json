@@ -1,66 +1,66 @@
 {
-	"name": "@modem/video-monitoring",
-	"homepage": "./",
-	"type": "module",
-	"main": "build/static/js/main.870a9604.js",
-    "typings": "build/static/js/main.870a9604.js",
-	"version": "0.0.2",
-	"dependencies": {
-		"@testing-library/jest-dom": "^5.16.4",
-		"@testing-library/react": "^13.3.0",
-		"@testing-library/user-event": "^13.5.0",
-		"axios": "^1.4.0",
-		"classnames": "^2.3.2",
-		"json-server": "^0.17.3",
-		"mobx": "^6.7.0",
-		"mobx-react": "^7.6.0",
-		"mobx-react-lite": "^3.4.0",
-		"moment": "^2.29.4",
-		"react": "^18.2.0",
-		"react-content-loader": "^6.2.0",
-		"react-dom": "^18.2.0",
-		"react-player": "^2.12.0",
-		"react-query": "^3.39.3",
-		"react-router-dom": "^5.3.0",
-		"react-scripts": "5.0.1",
-		"react-video-js-player": "^1.1.1",
-		"reactjs-video-playlist-player": "^1.1.1",
-		"sass": "^1.57.1",
-		"videojs-playlist": "^5.1.0"
-	},
-	"scripts": {
-		"start": "set PORT=3006 && react-scripts start",
-		"api": "json-server --id Id --watch ./src/api/index.js --port 3000",
-		"build": "react-scripts build",
-		"test": "react-scripts test",
-		"eject": "react-scripts eject"
-	},
-	"browserslist": {
-		"production": [
-			">0.2%",
-			"not dead",
-			"not op_mini all"
-		],
-		"development": [
-			"last 1 chrome version",
-			"last 1 firefox version",
-			"last 1 safari version"
-		]
-	},
-	"devDependencies": {
-		"@types/react": "^18.0.27",
-		"@types/react-router-dom": "^5.3.3",
-		"@types/video.js": "^7.3.52",
-		"typescript": "^4.9.4",
-		"video.js": "^8.5.2"
-	},
-	"files": [
-		"build/static/js/main.870a9604.js",
-		"build/static/js/main.870a9604.js.map",
-		"build/static/css/main.94e6a3d8.css",
-		"build/static/css/main.94e6a3d8.css.map"
-	],
-	"publishConfig": {
-		"registry": "https://nexus.modem.by/repository/npm-hosted/"
-	}
+    "name": "@modem/video-monitoring",
+    "version": "0.0.3",
+    "main": "Scripts/globalexports.ts",
+    "types": "Scripts/globalexports.ts",
+    "author": "videomonitoring",
+    "license": "MIT",
+    "description": "videomonitoring library",
+    "files": [
+        "mdm.tpl.content",
+        "mdm.tpl.pkg",
+        "mdm.tpl.routes.json",
+        "mdm.tpl.locale.json"
+    ],
+    "publishConfig": {
+        "registry": "https://nexus.modem.by/repository/npm-hosted/"
+    },
+    "keywords": [
+        "videomonitoring"
+    ],
+    "dependencies": {
+        "@babel/core": "^7.16.0",
+        "@modem/pub-changes-plugin": "0.3.1",
+        "babel-loader": "^8.2.3",
+        "babel-plugin-named-asset-import": "^0.3.8",
+        "babel-preset-react-app": "^10.0.1",
+        "child-process": "^1.0.2",
+        "css-loader": "^2.1.1",
+        "file-loader": "^3.0.1",
+        "fs-extra": "^9.0.1",
+        "html-webpack-plugin": "^3.2.0",
+        "mini-css-extract-plugin": "^0.9.0",
+        "path": "^0.12.7",
+        "postcss": "^8.4.4",
+        "postcss-flexbugs-fixes": "^5.0.2",
+        "postcss-loader": "^6.2.1",
+        "postcss-normalize": "^10.0.1",
+        "postcss-preset-env": "^7.0.1",
+        "react-table": "^7.8.0",
+        "react-window": "^1.8.7",
+        "react-window-infinite-loader": "^1.0.8",
+        "reflect-metadata": "^0.1.12",
+        "resolve": "^1.20.0",
+        "resolve-url-loader": "^4.0.0",
+        "sass": "^1.68.0",
+        "source-map-loader": "^0.2.4",
+        "stylus-loader": "^3.0.2",
+        "ts-loader": "^5.3.0",
+        "typescript": "^2.8.3",
+        "url-loader": "^1.1.2",
+        "webpack": "^4.27.1",
+        "webpack-cli": "^3.3.7",
+        "webpack-concat-plugin": "^3.0.0",
+        "webpack-dev-server": "^3.1.10"
+    },
+    "scripts": {
+        "build": "webpack",
+        "pub": "webpack --env.mode=publish",
+        "dev": "webpack --env.mode=watch-and-publish"
+    },
+    "devDependencies": {
+        "sass-loader": "^10.0.5",
+        "scss-loader": "^0.0.1",
+        "style-loader": "^2.0.0"
+    }
 }
