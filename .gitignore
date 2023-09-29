@@ -1,8 +1,1 @@
 node_modules
-yarn.lock
-yarn-error.log
-.yalc
-yalc.lock
-frontendpath.txt
-.npmrc
-package-lock.json

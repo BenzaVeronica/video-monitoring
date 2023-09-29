@@ -1,0 +1,62 @@
+[
+	{
+		"Id": 1,
+		"poster": "https://media.w3.org/2010/05/video/poster.png",
+		"imgAlt": "Image 0 not found",
+		"sources": [
+			{
+				"src": "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8",
+				"type": "application/x-mpegURL"
+			}
+		],
+		"name": "Скважина1Время_1010_1020Скважина1Время_1010_1020Скважина1Время_1010_1020"
+	},
+	{
+		"Id": 1,
+		"poster": "https://media.w3.org/2010/05/bunny/poster.png",
+		"sources": [
+			{
+				"src": "https://media.w3.org/2010/05/bunny/trailer.mp4",
+				"type": "video/mp4"
+			}
+		],
+		"imgAlt": "Image 1 not found",
+		"name": "Скважина1Время_1020_1030"
+	},
+	{
+		"Id": 1,
+		"poster": "https://media.w3.org/2010/05/sintel/poster.png",
+		"sources": [
+			{
+				"src": "https://media.w3.org/2010/05/sintel/trailer.mp4",
+				"type": "video/mp4"
+			}
+		],
+		"imgAlt": "Image 1 not found",
+		"name": "Скважина1Время_1030_1040"
+	},
+	{
+		"Id": 2,
+		"poster": "https://media.w3.org/2010/05/bunny/poster.png",
+		"sources": [
+			{
+				"src": "https://media.w3.org/2010/05/bunny/trailer.mp4",
+				"type": "video/mp4"
+			}
+		],
+		"imgAlt": "Image 1 not found",
+		"name": "Скважина1Время_1020_1030"
+	},
+	{
+		"Id": 2,
+		"poster": "https://media.w3.org/2010/05/sintel/poster.png",
+		"sources": [
+			{
+				"src": "https://media.w3.org/2010/05/sintel/trailer.mp4",
+				"type": "video/mp4"
+			}
+		],
+		"imgAlt": "Image 1 not found",
+		"name": "Скважина1Время_1030_1040"
+	}
+]
