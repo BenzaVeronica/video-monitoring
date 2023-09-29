@@ -1,1 +1,0 @@
-{"version":3,"file":"VideosStore.d.ts","sourceRoot":"","sources":["../../src/store/VideosStore.ts"],"names":[],"mappings":"AAGA,OAAO,EAAE,OAAO,EAAE,MAAM,UAAU,CAAC;AAEnC,qBAAa,eAAe;IAC3B,OAAO,CAAC,KAAK,CAAkB;IAC/B,OAAO,CAAC,OAAO,CAAsB;;IAMrC,IAAI,IAAI,eAEP;IACD,IAAI,MAAM,YAET;IACD,IAAI,QAAQ,wBAEX;IAED,uBAAuB,iCAgBrB;CACF;AACD,eAAO,MAAM,WAAW,iBAAwB,CAAC"}
